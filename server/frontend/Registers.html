@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registers | panat</title>
+    <link rel="stylesheet" href="Registers.css"> 
+    <link rel ="icon" href="file:///D:/hospital-icon.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="brand">Registers</a>
+            <div class="navigation">
+                <div class="navigation-item">
+                    <a href="index.html">Home</a>
+                    <a href="Registers.html">Registers</a>
+                    <a href="user.html">User management</a>   
+                    <a href="#">About</a>
+                </div>
+            </div>
+        </header>
+        
+        <video class="video-slide" src="file:///C:/Users/hp/Downloads/7195710-hd_2048_1080_25fps.mp4" autoplay muted loop></video>
+        
+        <div class="form-box">
+            <div class="register-container" id="register">
+                <div class="top">
+                    <h2>ข้อมูลผู้ป่วย</h2>
+                </div> 
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input class="form" name="Firstname" type="text" placeholder="กรุณากรอกชื่อจริง">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input class="form" name="Lastname" type="text" placeholder="กรุณากรอกนามสกุล">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input class="form" name="age" type="number" min="0" max="100" placeholder="กรุณากรอกอายุ">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input class="form" name="congenitaldisorder" type="text" placeholder="กรุณากรอกโรคประจำตัว">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="gender-container">
+                    <div class="header-gender">เพศ</div>
+                    <div class="gender-option">
+                        <div>
+                            <input name="gender" type="radio" value="ชาย"> ชาย    
+                        </div>
+                        <div>
+                            <input name="gender" type="radio" value="หญิง"> หญิง
+                        </div>
+                        <div>
+                            <input name="gender" type="radio" value="ไม่ระบุ"> ไม่ระบุ
+                        </div>
+                    </div>
+                </div>
+                <div class="top">
+                    <h2>ข้อมูลการรักษา</h2>
+                </div> 
+                <div class="header-form">วันที่ให้บริการ</div>
+                <div class="input-box">
+                    <input class="form" name="Servicedate" type="date" placeholder="วันที่ให้บริการ">
+                </div>
+                <div class="input-box">
+                    <input class="form" name="Illness" type="text" placeholder="อาการ">
+                </div>
+                <div class="input-box">
+                    <input class="form" name="Diagnosedisease" type="text" placeholder="โรคที่ตรวจพบ">
+                </div>
+                <div class="input-box">
+                    <input class="form" name="Treatmentandmedicine" type="text" placeholder="การรักษาและยา">
+                </div>
+                <div class="top">
+                    <h2>ข้อมูลนัดหมายแพทย์</h2>
+                </div> 
+                <div class="header-form">วันนัดหมาย</div>
+                <div class="input-box">
+                    <input class="form" name="Appointmentdate" type="date" placeholder="วันนัดหมาย" id="appointment-date">
+                </div>
+                <div class="input-box">
+                    <input class="form" name="doctorappointment" type="text" placeholder="แพทย์ที่นัดหมาย">
+                </div>
+                <div class="input-box">
+                    <textarea name="Appointmentdetails" placeholder="รายละเอียดการนัดหมาย"></textarea>
+                    <div id="message" class="message"></div>
+                </div>
+                <button onclick="submitData()" class="button" role="button"><span class="text">ส่งข้อมูล</span><span>กดเลย</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

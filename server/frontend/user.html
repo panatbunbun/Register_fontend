@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management | panat</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel ="icon" href="file:///D:/hospital-icon.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">User Management</a>
+        <div class="navigation">
+            <div class="navigation-item">
+                <a href="index.html">Home</a>
+                <a href="Registers.html">Registers</a>
+                <a href="user.html">User Management</a>     
+                <a href="#">About</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="userTableContainer">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>age</th>
+                    <th>Genger</th>
+                    <th>congenitaldisorder</th>
+                    <th>Doctor</th>
+                    <th>Delete and Edit</th>
+                    
+                </tr>
+            </div>
+            </thead>
+            <tbody id="userDataBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="user.js"></script>
+</body>
+</html>
