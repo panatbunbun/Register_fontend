@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ส่วนที่ไม่แสดงออกไปในหน้าจอของ Browser -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Panat</title>
+  <link rel="stylesheet" href="indexhome.css"> 
+  <link rel ="icon" href="file:///D:/hospital-icon.png">
+</head>
+<body>  
+       <header>
+        <a href = "#" class="brand">Patient Data Recording System!</a>
+        <div class="navigation">
+          <div class="navigation-item">
+            <a href="index.html">Home</a>
+            <a href="Registers.html">Registers</a>
+            <a href="user.html">User management</a>   
+            <a href="#">About</a>
+          </div>
+        </div>
+       </header>
+       
+       <section class="home">
+        <video class="video-slide active" src="file:///C:/Users/hp/Downloads/7088940-hd_1920_1080_25fps.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="file:///C:/Users/hp/Downloads/4121618-hd_1920_1080_25fps.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="file:///C:/Users/hp/Downloads/7088943-hd_1920_1080_25fps.mp4" autoplay muted loop></video>
+        <div class="content">
+          <h1>Welcome To<br><span>My Project.</span></h1>
+        </div>
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+       </section>
+      <script type="text/javascript">
+        const btns = document.querySelectorAll('.nav-btn')
+        const slides = document.querySelectorAll('.video-slide')
+
+        var sliderNav = function(manual){
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+          });
+
+        btns[manual].classList.add('active');
+        slides[manual].classList.add('active');
+        }
+        btns.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+        sliderNav(i);
+        });
+    }); 
+      </script>
+  </body>
+</html>
